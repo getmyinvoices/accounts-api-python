@@ -3,6 +3,7 @@ import json
 import urllib3
 from urllib3 import Timeout
 
+
 class GMI:
     __HOST = "https://api.getmyinvoices.com/accounts/v2"
 
