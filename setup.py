@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
     name='getmyinvoices',
-    version='1.0',
+    version='1.0.1',
     author="Ben Barten",
     author_email="bba@fino.digital",
     description="A python client for the GetMyInvoices API",
@@ -19,6 +19,6 @@ setuptools.setup(
     ],
     python_requires='>=3.7',
     install_requires=[
-        "urllib3==1.24.1"
+        "urllib3==1.24.2"
     ]
 )
