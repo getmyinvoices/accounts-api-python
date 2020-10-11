@@ -2,6 +2,7 @@ import json
 
 import urllib3
 from urllib3 import Timeout
+import certifi
 
 
 class GMI:
@@ -278,5 +279,7 @@ class GMI:
         return json.loads(response.data)
 
 
-_http = urllib3.PoolManager(headers={"Content-Type": "application/json"},
+_http = urllib3.PoolManager(cert_reqs='CERT_REQUIRED',
+                            ca_certs=certifi.where(),
+                            headers={"Content-Type": "application/json"},
                             timeout=Timeout(connect=None, read=None))
