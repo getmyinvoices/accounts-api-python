@@ -88,6 +88,7 @@ class GMI:
                             document_due_date=None,
                             payment_method=None,
                             payment_status=None,
+                            paid_at=None,
                             net_amount=None,
                             gross_amount=None,
                             currency=None,
@@ -109,6 +110,7 @@ class GMI:
         self._optional(payload, "document_date", document_date)
         self._optional(payload, "payment_method", payment_method)
         self._optional(payload, "payment_status", payment_status)
+        self._optional(payload, "paid_at", paid_at)
         self._optional(payload, "gross_amount", gross_amount)
         self._optional(payload, "net_amount", net_amount)
         self._optional(payload, "currency", currency)
@@ -133,6 +135,7 @@ class GMI:
                         document_due_date=None,
                         payment_method=None,
                         payment_status=None,
+                        paid_at=None,
                         net_amount=None,
                         gross_amount=None,
                         currency=None,
@@ -152,6 +155,7 @@ class GMI:
         self._optional(payload, "document_due_date", document_due_date)
         self._optional(payload, "payment_method", payment_method)
         self._optional(payload, "payment_status", payment_status)
+        self._optional(payload, "paid_at", paid_at)
         self._optional(payload, "net_amount", net_amount)
         self._optional(payload, "gross_amount", gross_amount)
         self._optional(payload, "vat", vat)
