@@ -19,6 +19,6 @@ setuptools.setup(
     ],
     python_requires='>=3.7',
     install_requires=[
-        "urllib3==1.24.2"
+        "urllib3==1.26.5"
     ]
 )
