@@ -170,6 +170,11 @@ class GMI:
         response = self._post(payload, "/updateDocument")
         return json.loads(response.data)
 
+    def delete_document(self, document_prim_uid):
+        payload = {"document_prim_uid": document_prim_uid}
+        response = self._post(payload, "/deleteDocument")
+        return json.loads(response.data)
+
     def get_countries(self):
         response = self._post({}, "/getCountries")
         return json.loads(response.data)
